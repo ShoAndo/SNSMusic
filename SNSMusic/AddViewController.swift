@@ -10,9 +10,9 @@ import UIKit
 
 class AddViewController: UIViewController {
     
-    var artists:[String] = []
+    var artists = [String]()
     
-    var songs:[String] = []
+    var songs = [String]()
     
     @IBOutlet weak var textField: UITextField!
     

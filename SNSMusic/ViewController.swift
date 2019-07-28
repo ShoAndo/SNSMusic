@@ -9,17 +9,17 @@
 import UIKit
 import Koloda
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource {
     
-    var images: [String] = []
     
-    var KolodaData: [[String: Any]] = [] {
-        didSet {
-            kolodaView.reloadData()
-        }
-    }
+    var images: [UIImage] = []
+    
+    var KolodaData: [[String: Any]] = []
 
-    @IBOutlet weak var uploadView: UIView!
+    
+    
+    @IBOutlet weak var kolodaView: KolodaView!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -27,14 +27,30 @@ class ViewController: UIViewController {
         kolodaView.delegate = self
         kolodaView.dataSource = self
         
+        var artists = [String]()
+        var songs = [String]()
+        
         if UserDefaults.standard.object(forKey: "artistsList") != nil{
-            var artists = UserDefaults.standard.object(forKey:"artistsList") as! [String]
+              artists = UserDefaults.standard.object(forKey:"artistsList") as! [String]
         }
         if UserDefaults.standard.object(forKey: "songsList") != nil{
-            var songs = UserDefaults.standard.object(forKey: "songsList") as! [String]
+              songs = UserDefaults.standard.object(forKey: "songsList") as! [String]
+        }
+    }
+    
+    
+    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+        var artists = [String]()
+        var songs = [String]()
+        
+        if UserDefaults.standard.object(forKey: "artistsList") != nil{
+            artists = UserDefaults.standard.object(forKey:"artistsList") as! [String]
+        }
+        if UserDefaults.standard.object(forKey: "songsList") != nil{
+            songs = UserDefaults.standard.object(forKey: "songsList") as! [String]
         }
         
-        let url: URL = URL(string: "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?term=\(artists[IndexPath.row])&limit=1")!
+        let url: URL = URL(string: "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?term=\(artists[index])&limit=1")!
         let task: URLSessionTask = URLSession.shared.dataTask(with: url, completionHandler: {data, response, error in
             do {
                 let items = try JSONSerialization.jsonObject(with: data!) as! NSDictionary
@@ -52,7 +68,14 @@ class ViewController: UIViewController {
                             
                             let data: [String: Any] = ["name": dicMusic["trackName"]!, "imageUrl": dicMusic["artworkUrl100"]!]
                             
+                            
+                            
                             result.append(data)
+                            let url = URL(string: data["imageUrl"] as! String)
+                            
+                            let imageData :Data = (try! Data(contentsOf: url!,options: NSData.ReadingOptions.mappedIfSafe))
+                            let img = UIImage(data:imageData)
+                            self.images.append(img!)
                         }
                     }
                 }
@@ -69,16 +92,15 @@ class ViewController: UIViewController {
         task.resume()
         
         
+        //        画像生成
         
+        //        imageViewに生成した画像を設定
+        let imageView = UIImageView(image: images[index])
+        //        ImageViewを返す
+        return imageView
         
-        // Do any additional setup after loading the view.
-    }
-
-
-}
-
-extension ViewController: KolodaViewDelegate, KolodaViewDataSource{
-    func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
+       
+        
         
     }
     
