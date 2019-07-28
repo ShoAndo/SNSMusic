@@ -34,12 +34,7 @@ class AddViewController: UIViewController {
         UserDefaults.standard.set(artists,forKey: "artistsList")
         UserDefaults.standard.set(songs, forKey: "songsList")
         
-        let storyboard:UIStoryboard = self.storyboard!
-        
-        let nextView = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        
-        self.present(nextView,animated: true,completion: nil)
-    
+        performSegue(withIdentifier: "toKoloda", sender: nil)
     
 
     

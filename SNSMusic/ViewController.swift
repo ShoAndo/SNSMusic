@@ -16,6 +16,7 @@ class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource 
     
     var KolodaData: [[String: Any]] = []
 
+    @IBOutlet weak var label: UILabel!
     
     
     @IBOutlet weak var kolodaView: KolodaView!
@@ -27,15 +28,7 @@ class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource 
         kolodaView.delegate = self
         kolodaView.dataSource = self
         
-        var artists = [String]()
-        var songs = [String]()
-        
-        if UserDefaults.standard.object(forKey: "artistsList") != nil{
-              artists = UserDefaults.standard.object(forKey:"artistsList") as! [String]
-        }
-        if UserDefaults.standard.object(forKey: "songsList") != nil{
-              songs = UserDefaults.standard.object(forKey: "songsList") as! [String]
-        }
+       
     }
     
     
@@ -50,6 +43,7 @@ class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource 
             songs = UserDefaults.standard.object(forKey: "songsList") as! [String]
         }
         
+       
         let url: URL = URL(string: "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?term=\(artists[index])&limit=1")!
         let task: URLSessionTask = URLSession.shared.dataTask(with: url, completionHandler: {data, response, error in
             do {
@@ -91,8 +85,7 @@ class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource 
         })
         task.resume()
         
-        
-        //        画像生成
+        label.text = songs[index]
         
         //        imageViewに生成した画像を設定
         let imageView = UIImageView(image: images[index])
