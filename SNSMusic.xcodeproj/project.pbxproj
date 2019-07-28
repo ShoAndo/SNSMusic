@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A1777A65BB7538A37C0EC42 /* Pods_SNSMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F081AD025247FE8090787EFE /* Pods_SNSMusicTests.framework */; };
+		9F712C5822ED7F020018217C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F712C5722ED7F020018217C /* AppDelegate.swift */; };
+		9F712C5A22ED7F020018217C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F712C5922ED7F020018217C /* ViewController.swift */; };
+		9F712C5D22ED7F020018217C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F712C5B22ED7F020018217C /* Main.storyboard */; };
+		9F712C5F22ED7F040018217C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F712C5E22ED7F040018217C /* Assets.xcassets */; };
+		9F712C6222ED7F040018217C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F712C6022ED7F040018217C /* LaunchScreen.storyboard */; };
+		9F712C6D22ED7F040018217C /* SNSMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F712C6C22ED7F040018217C /* SNSMusicTests.swift */; };
+		9F712C7822ED7F040018217C /* SNSMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F712C7722ED7F040018217C /* SNSMusicUITests.swift */; };
+		9F712C8622ED7FB50018217C /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F712C8522ED7FB50018217C /* AddViewController.swift */; };
+		CDA214F5AAB76141E32DF673 /* Pods_SNSMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C65F63EE6E4E4F13BB02CC83 /* Pods_SNSMusic.framework */; };
+		E5038DC5913F9ABBF34084B2 /* Pods_SNSMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB69FAF72629E88192AC9BA7 /* Pods_SNSMusicUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F712C6922ED7F040018217C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F712C4C22ED7F020018217C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F712C5322ED7F020018217C;
+			remoteInfo = SNSMusic;
+		};
+		9F712C7422ED7F040018217C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F712C4C22ED7F020018217C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F712C5322ED7F020018217C;
+			remoteInfo = SNSMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D677279828B131B45F4A895 /* Pods-SNSMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSMusic.release.xcconfig"; path = "Target Support Files/Pods-SNSMusic/Pods-SNSMusic.release.xcconfig"; sourceTree = "<group>"; };
+		31B2C81554CEAB9FB20579F8 /* Pods-SNSMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-SNSMusicUITests/Pods-SNSMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53A737670CC54A40454EB881 /* Pods-SNSMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-SNSMusicUITests/Pods-SNSMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9F712C5422ED7F020018217C /* SNSMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNSMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F712C5722ED7F020018217C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F712C5922ED7F020018217C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F712C5C22ED7F020018217C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9F712C5E22ED7F040018217C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F712C6122ED7F040018217C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9F712C6322ED7F040018217C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F712C6822ED7F040018217C /* SNSMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F712C6C22ED7F040018217C /* SNSMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSMusicTests.swift; sourceTree = "<group>"; };
+		9F712C6E22ED7F040018217C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F712C7322ED7F040018217C /* SNSMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SNSMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F712C7722ED7F040018217C /* SNSMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSMusicUITests.swift; sourceTree = "<group>"; };
+		9F712C7922ED7F040018217C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F712C8522ED7FB50018217C /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		B244AA7F13725407404276C4 /* Pods-SNSMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSMusic.debug.xcconfig"; path = "Target Support Files/Pods-SNSMusic/Pods-SNSMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		C65F63EE6E4E4F13BB02CC83 /* Pods_SNSMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D99427D38E8FAE1049A60B /* Pods-SNSMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSMusicTests.release.xcconfig"; path = "Target Support Files/Pods-SNSMusicTests/Pods-SNSMusicTests.release.xcconfig"; sourceTree = "<group>"; };
+		DB69FAF72629E88192AC9BA7 /* Pods_SNSMusicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSMusicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F081AD025247FE8090787EFE /* Pods_SNSMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNSMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F91B449EA95FE53FEE8AB5A1 /* Pods-SNSMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNSMusicTests.debug.xcconfig"; path = "Target Support Files/Pods-SNSMusicTests/Pods-SNSMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F712C5122ED7F020018217C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDA214F5AAB76141E32DF673 /* Pods_SNSMusic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F712C6522ED7F040018217C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A1777A65BB7538A37C0EC42 /* Pods_SNSMusicTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F712C7022ED7F040018217C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5038DC5913F9ABBF34084B2 /* Pods_SNSMusicUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B240DB0190D3C243C72AA6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B244AA7F13725407404276C4 /* Pods-SNSMusic.debug.xcconfig */,
+				1D677279828B131B45F4A895 /* Pods-SNSMusic.release.xcconfig */,
+				F91B449EA95FE53FEE8AB5A1 /* Pods-SNSMusicTests.debug.xcconfig */,
+				C9D99427D38E8FAE1049A60B /* Pods-SNSMusicTests.release.xcconfig */,
+				31B2C81554CEAB9FB20579F8 /* Pods-SNSMusicUITests.debug.xcconfig */,
+				53A737670CC54A40454EB881 /* Pods-SNSMusicUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F712C4B22ED7F020018217C = {
+			isa = PBXGroup;
+			children = (
+				9F712C5622ED7F020018217C /* SNSMusic */,
+				9F712C6B22ED7F040018217C /* SNSMusicTests */,
+				9F712C7622ED7F040018217C /* SNSMusicUITests */,
+				9F712C5522ED7F020018217C /* Products */,
+				8B240DB0190D3C243C72AA6A /* Pods */,
+				F7D2E51A528A71EC8A11BE12 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9F712C5522ED7F020018217C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F712C5422ED7F020018217C /* SNSMusic.app */,
+				9F712C6822ED7F040018217C /* SNSMusicTests.xctest */,
+				9F712C7322ED7F040018217C /* SNSMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F712C5622ED7F020018217C /* SNSMusic */ = {
+			isa = PBXGroup;
+			children = (
+				9F712C5722ED7F020018217C /* AppDelegate.swift */,
+				9F712C5922ED7F020018217C /* ViewController.swift */,
+				9F712C5B22ED7F020018217C /* Main.storyboard */,
+				9F712C8522ED7FB50018217C /* AddViewController.swift */,
+				9F712C5E22ED7F040018217C /* Assets.xcassets */,
+				9F712C6022ED7F040018217C /* LaunchScreen.storyboard */,
+				9F712C6322ED7F040018217C /* Info.plist */,
+			);
+			path = SNSMusic;
+			sourceTree = "<group>";
+		};
+		9F712C6B22ED7F040018217C /* SNSMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F712C6C22ED7F040018217C /* SNSMusicTests.swift */,
+				9F712C6E22ED7F040018217C /* Info.plist */,
+			);
+			path = SNSMusicTests;
+			sourceTree = "<group>";
+		};
+		9F712C7622ED7F040018217C /* SNSMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F712C7722ED7F040018217C /* SNSMusicUITests.swift */,
+				9F712C7922ED7F040018217C /* Info.plist */,
+			);
+			path = SNSMusicUITests;
+			sourceTree = "<group>";
+		};
+		F7D2E51A528A71EC8A11BE12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C65F63EE6E4E4F13BB02CC83 /* Pods_SNSMusic.framework */,
+				F081AD025247FE8090787EFE /* Pods_SNSMusicTests.framework */,
+				DB69FAF72629E88192AC9BA7 /* Pods_SNSMusicUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F712C5322ED7F020018217C /* SNSMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F712C7C22ED7F040018217C /* Build configuration list for PBXNativeTarget "SNSMusic" */;
+			buildPhases = (
+				C06B71CD6113AC21DD9F5A70 /* [CP] Check Pods Manifest.lock */,
+				9F712C5022ED7F020018217C /* Sources */,
+				9F712C5122ED7F020018217C /* Frameworks */,
+				9F712C5222ED7F020018217C /* Resources */,
+				6C1C7522E0E42510E76123B5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SNSMusic;
+			productName = SNSMusic;
+			productReference = 9F712C5422ED7F020018217C /* SNSMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F712C6722ED7F040018217C /* SNSMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F712C7F22ED7F040018217C /* Build configuration list for PBXNativeTarget "SNSMusicTests" */;
+			buildPhases = (
+				93F9683D8A39DC0BA86CEE61 /* [CP] Check Pods Manifest.lock */,
+				9F712C6422ED7F040018217C /* Sources */,
+				9F712C6522ED7F040018217C /* Frameworks */,
+				9F712C6622ED7F040018217C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F712C6A22ED7F040018217C /* PBXTargetDependency */,
+			);
+			name = SNSMusicTests;
+			productName = SNSMusicTests;
+			productReference = 9F712C6822ED7F040018217C /* SNSMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F712C7222ED7F040018217C /* SNSMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F712C8222ED7F040018217C /* Build configuration list for PBXNativeTarget "SNSMusicUITests" */;
+			buildPhases = (
+				34057FC9EA81A1B423A372AE /* [CP] Check Pods Manifest.lock */,
+				9F712C6F22ED7F040018217C /* Sources */,
+				9F712C7022ED7F040018217C /* Frameworks */,
+				9F712C7122ED7F040018217C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F712C7522ED7F040018217C /* PBXTargetDependency */,
+			);
+			name = SNSMusicUITests;
+			productName = SNSMusicUITests;
+			productReference = 9F712C7322ED7F040018217C /* SNSMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F712C4C22ED7F020018217C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "安藤奨";
+				TargetAttributes = {
+					9F712C5322ED7F020018217C = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					9F712C6722ED7F040018217C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 9F712C5322ED7F020018217C;
+					};
+					9F712C7222ED7F040018217C = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 9F712C5322ED7F020018217C;
+					};
+				};
+			};
+			buildConfigurationList = 9F712C4F22ED7F020018217C /* Build configuration list for PBXProject "SNSMusic" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F712C4B22ED7F020018217C;
+			productRefGroup = 9F712C5522ED7F020018217C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F712C5322ED7F020018217C /* SNSMusic */,
+				9F712C6722ED7F040018217C /* SNSMusicTests */,
+				9F712C7222ED7F040018217C /* SNSMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F712C5222ED7F020018217C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F712C6222ED7F040018217C /* LaunchScreen.storyboard in Resources */,
+				9F712C5F22ED7F040018217C /* Assets.xcassets in Resources */,
+				9F712C5D22ED7F020018217C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F712C6622ED7F040018217C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F712C7122ED7F040018217C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34057FC9EA81A1B423A372AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNSMusicUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C1C7522E0E42510E76123B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNSMusic/Pods-SNSMusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNSMusic/Pods-SNSMusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNSMusic/Pods-SNSMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93F9683D8A39DC0BA86CEE61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNSMusicTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C06B71CD6113AC21DD9F5A70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNSMusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F712C5022ED7F020018217C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F712C5A22ED7F020018217C /* ViewController.swift in Sources */,
+				9F712C5822ED7F020018217C /* AppDelegate.swift in Sources */,
+				9F712C8622ED7FB50018217C /* AddViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F712C6422ED7F040018217C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F712C6D22ED7F040018217C /* SNSMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F712C6F22ED7F040018217C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F712C7822ED7F040018217C /* SNSMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F712C6A22ED7F040018217C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F712C5322ED7F020018217C /* SNSMusic */;
+			targetProxy = 9F712C6922ED7F040018217C /* PBXContainerItemProxy */;
+		};
+		9F712C7522ED7F040018217C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F712C5322ED7F020018217C /* SNSMusic */;
+			targetProxy = 9F712C7422ED7F040018217C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9F712C5B22ED7F020018217C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F712C5C22ED7F020018217C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9F712C6022ED7F040018217C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F712C6122ED7F040018217C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9F712C7A22ED7F040018217C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F712C7B22ED7F040018217C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F712C7D22ED7F040018217C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B244AA7F13725407404276C4 /* Pods-SNSMusic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R33L9N7UCD;
+				INFOPLIST_FILE = SNSMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.SNSMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F712C7E22ED7F040018217C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D677279828B131B45F4A895 /* Pods-SNSMusic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R33L9N7UCD;
+				INFOPLIST_FILE = SNSMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.SNSMusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F712C8022ED7F040018217C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F91B449EA95FE53FEE8AB5A1 /* Pods-SNSMusicTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R33L9N7UCD;
+				INFOPLIST_FILE = SNSMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.SNSMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNSMusic.app/SNSMusic";
+			};
+			name = Debug;
+		};
+		9F712C8122ED7F040018217C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D99427D38E8FAE1049A60B /* Pods-SNSMusicTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R33L9N7UCD;
+				INFOPLIST_FILE = SNSMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.SNSMusicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SNSMusic.app/SNSMusic";
+			};
+			name = Release;
+		};
+		9F712C8322ED7F040018217C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31B2C81554CEAB9FB20579F8 /* Pods-SNSMusicUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R33L9N7UCD;
+				INFOPLIST_FILE = SNSMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.SNSMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SNSMusic;
+			};
+			name = Debug;
+		};
+		9F712C8422ED7F040018217C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53A737670CC54A40454EB881 /* Pods-SNSMusicUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R33L9N7UCD;
+				INFOPLIST_FILE = SNSMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.practice.SNSMusicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SNSMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F712C4F22ED7F020018217C /* Build configuration list for PBXProject "SNSMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F712C7A22ED7F040018217C /* Debug */,
+				9F712C7B22ED7F040018217C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F712C7C22ED7F040018217C /* Build configuration list for PBXNativeTarget "SNSMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F712C7D22ED7F040018217C /* Debug */,
+				9F712C7E22ED7F040018217C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F712C7F22ED7F040018217C /* Build configuration list for PBXNativeTarget "SNSMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F712C8022ED7F040018217C /* Debug */,
+				9F712C8122ED7F040018217C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F712C8222ED7F040018217C /* Build configuration list for PBXNativeTarget "SNSMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F712C8322ED7F040018217C /* Debug */,
+				9F712C8422ED7F040018217C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9F712C4C22ED7F020018217C /* Project object */;
+}
