@@ -31,6 +31,11 @@ class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource 
        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        kolodaView.reloadData()
+    }
+    
     
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         var artists = [String]()
@@ -42,9 +47,16 @@ class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource 
         if UserDefaults.standard.object(forKey: "songsList") != nil{
             songs = UserDefaults.standard.object(forKey: "songsList") as! [String]
         }
+        print(artists)
+        print(songs)
+        
+        
         
        
-        let url: URL = URL(string: "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?term=\(artists[index])&limit=1")!
+        let url:URL = URL(string: "http://ax.itunes.apple.com/WebObjects/MZStoreServices.woa/wa/wsSearch?term=\(artists[index])")!
+        
+        
+        print(url)
         let task: URLSessionTask = URLSession.shared.dataTask(with: url, completionHandler: {data, response, error in
             do {
                 let items = try JSONSerialization.jsonObject(with: data!) as! NSDictionary
@@ -77,6 +89,7 @@ class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource 
                 DispatchQueue.main.async() { () -> Void in
                     //                    collectiondataはcollectionDatawのこと
                     self.KolodaData = result
+                    print(result)
                 }
                 
             } catch {
@@ -86,6 +99,7 @@ class ViewController: UIViewController,KolodaViewDelegate, KolodaViewDataSource 
         task.resume()
         
         label.text = songs[index]
+        
         
         //        imageViewに生成した画像を設定
         let imageView = UIImageView(image: images[index])

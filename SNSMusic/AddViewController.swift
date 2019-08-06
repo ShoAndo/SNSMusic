@@ -25,6 +25,16 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func didClickButton(_ sender: UIButton) {
+        if textField.text?.isEmpty == nil{
+            return
+        }
+        
+        if textFIeldSong.text?.isEmpty == nil{
+            return
+        }
+        
+        print(textField.text!)
+        print(textFIeldSong.text!)
 
         artists.append(textField.text!)
         textField.text = ""
@@ -34,8 +44,7 @@ class AddViewController: UIViewController {
         UserDefaults.standard.set(artists,forKey: "artistsList")
         UserDefaults.standard.set(songs, forKey: "songsList")
         
-        performSegue(withIdentifier: "toKoloda", sender: nil)
-    
+        
 
     
 

@@ -18,10 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNL-gu-ROk" customClass="KolodaView" customModule="Koloda">
-                                <rect key="frame" x="20" y="191" width="374" height="410"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeH-DN-psM">
                                 <rect key="frame" x="20" y="654" width="374" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -29,19 +25,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fN7-zR-lfF" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="20" y="76" width="374" height="570"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="sNL-gu-ROk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="147" id="Cff-Nu-OWG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sNL-gu-ROk" secondAttribute="bottom" constant="261" id="CwN-0y-hFB"/>
-                            <constraint firstItem="sNL-gu-ROk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Orm-k7-rSO"/>
-                            <constraint firstItem="sNL-gu-ROk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uzy-A9-rhw"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="9kB-Mx-fWe"/>
                     <connections>
-                        <outlet property="kolodaView" destination="sNL-gu-ROk" id="Ujq-8D-69P"/>
+                        <outlet property="kolodaView" destination="fN7-zR-lfF" id="Lkl-oO-33B"/>
                         <outlet property="label" destination="FeH-DN-psM" id="q9o-1u-ixC"/>
                         <segue destination="fYk-CO-F0b" kind="show" id="Fjk-6V-BKU"/>
                     </connections>
@@ -89,11 +84,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alf-87-nVU">
-                                <rect key="frame" x="172" y="544" width="81" height="60"/>
+                                <rect key="frame" x="172" y="593" width="81" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="投稿"/>
                                 <connections>
-                                    <action selector="didClickButton:" destination="fYk-CO-F0b" eventType="touchUpInside" id="3gX-wx-YLB"/>
+                                    <action selector="didClickButton:" destination="fYk-CO-F0b" eventType="touchUpInside" id="3kH-4d-OyH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -116,8 +111,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="eyR-LR-5ho"/>
                     <connections>
-                        <outlet property="textFIeldSong" destination="YKN-ZI-37V" id="63v-gf-Ixo"/>
-                        <outlet property="textField" destination="MSy-Xg-rdU" id="y0w-TO-hGL"/>
+                        <outlet property="textFIeldSong" destination="YKN-ZI-37V" id="yf0-jG-THv"/>
+                        <outlet property="textField" destination="MSy-Xg-rdU" id="fps-zW-Hll"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toKoloda" id="GGg-yx-941"/>
                     </connections>
                 </viewController>
@@ -131,6 +126,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bYH-2U-Td8" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jGm-7O-tj5">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -145,7 +141,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3p4-bZ-Aep"/>
+        <segue reference="Fjk-6V-BKU"/>
         <segue reference="GGg-yx-941"/>
     </inferredMetricsTieBreakers>
 </document>

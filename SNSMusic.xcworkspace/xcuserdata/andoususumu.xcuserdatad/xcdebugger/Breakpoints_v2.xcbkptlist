@@ -2,4 +2,194 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SNSMusic/ViewController.swift"
+            timestampString = "586407965.6104521"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "koloda(_:viewForCardAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SNSMusic/ViewController.swift"
+            timestampString = "586407965.611842"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SNSMusic.ViewController.kolodaView.getter : Swift.Optional&lt;Koloda.KolodaView&gt;"
+                  moduleName = "SNSMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andoususumu/Desktop/Homepractice/practice/secondapp/SNSMusic/SNSMusic/ViewController.swift"
+                  timestampString = "586377473.393393"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SNSMusic.ViewController.kolodaView.setter : Swift.Optional&lt;Koloda.KolodaView&gt;"
+                  moduleName = "SNSMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andoususumu/Desktop/Homepractice/practice/secondapp/SNSMusic/SNSMusic/ViewController.swift"
+                  timestampString = "586377473.396515"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SNSMusic.ViewController.kolodaView.modify : Swift.Optional&lt;Koloda.KolodaView&gt;"
+                  moduleName = "SNSMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andoususumu/Desktop/Homepractice/practice/secondapp/SNSMusic/SNSMusic/ViewController.swift"
+                  timestampString = "586377473.400934"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SNSMusic.ViewController.kolodaView.modify : Swift.Optional&lt;Koloda.KolodaView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SNSMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andoususumu/Desktop/Homepractice/practice/secondapp/SNSMusic/SNSMusic/ViewController.swift"
+                  timestampString = "586377473.403384"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SNSMusic.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SNSMusic.ViewController"
+                  moduleName = "SNSMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andoususumu/Desktop/Homepractice/practice/secondapp/SNSMusic/SNSMusic/ViewController.swift"
+                  timestampString = "586377473.405607"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "623">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SNSMusic.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SNSMusic.ViewController&gt;"
+                  moduleName = "SNSMusic"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andoususumu/Desktop/Homepractice/practice/secondapp/SNSMusic/SNSMusic/ViewController.swift"
+                  timestampString = "586377473.409736"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "548">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SNSMusic/AddViewController.swift"
+            timestampString = "586407965.613133"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "didClickButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SNSMusic/AddViewController.swift"
+            timestampString = "586407965.613449"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "didClickButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SNSMusic/AddViewController.swift"
+            timestampString = "586407965.6154079"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "didClickButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SNSMusic/ViewController.swift"
+            timestampString = "586407965.616222"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "koloda(_:viewForCardAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
